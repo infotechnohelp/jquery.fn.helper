@@ -1,6 +1,6 @@
 {
   "name": "jquery.fn.helper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "jQuery object helper",
   "main": "index.js",
   "scripts": {
