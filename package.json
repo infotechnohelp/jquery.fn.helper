@@ -1,6 +1,6 @@
 {
   "name": "jquery.fn.helper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "jQuery object helper",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/infotechnohelp/jquery.fn.helper/issues"
   },
-  "homepage": "https://github.com/infotechnohelp/jquery.fn.helper#readme"
+  "homepage": "https://github.com/infotechnohelp/jquery.fn.helper#readme",
+  "dependencies": {
+    "@infotechnohelp/js.helper": "^1.0.0"
+  }
 }

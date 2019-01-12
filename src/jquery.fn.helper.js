@@ -1,10 +1,5 @@
 (function (jQuery) {
 
-    // @todo Move to js.helper later
-    function setOption(optionTitle, options, defaultOptions){
-        return options[optionTitle] === undefined ? defaultOptions[optionTitle] : options[optionTitle];
-    }
-
     jQuery.fn.isShown = function () {
         var result = true;
 
@@ -19,6 +14,8 @@
 
     jQuery.fn.slideDownUp = function (options) {
 
+        var js = new Helper();
+
         if (options === undefined) {
             options = {};
         }
@@ -32,9 +29,9 @@
         return this.each(function () {
             jQuery(this)
                 .finish()
-                .slideDown(setOption('slideDown', options, defaultOptions))
-                .delay(setOption('delay', options, defaultOptions))
-                .slideUp(setOption('slideUp', options, defaultOptions));
+                .slideDown(js.setOption('slideDown', options, defaultOptions))
+                .delay(js.setOption('delay', options, defaultOptions))
+                .slideUp(js.setOption('slideUp', options, defaultOptions));
         });
     };
 
