@@ -1,7 +1,7 @@
 (function (jQuery) {
 
-    jQuery.fn.extend({
+    jQuery.fn.isShown = function(){
 
-    });
+    };
 
 }(jQuery));
